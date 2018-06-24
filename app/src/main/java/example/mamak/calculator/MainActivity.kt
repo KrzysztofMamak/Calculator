@@ -39,7 +39,8 @@ class MainActivity : AppCompatActivity() {
         var btnEquals: Button = findViewById(R.id.btnEquals)
 
         btn0.setOnClickListener ({
-            textView.text = textView.text.toString() + btn0.text.toString()
+            if (textView.text != "0")
+                textView.text = textView.text.toString() + btn0.text.toString()
         })
 
         btn1.setOnClickListener ({
